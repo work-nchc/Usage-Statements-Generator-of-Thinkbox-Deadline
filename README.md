@@ -9,7 +9,7 @@ task_api.py and task_api.cfg should be placed in:
 C:\Program Files\Thinkbox\Deadline10\bin
 ```
 
-suph_dl.csv and ch_group.txt should be placed in the [fldr] specified in task_api.cfg.  Configure the default SU per hour in task_api.cfg, the SU per hour for each slave in suph_dl.csv, and the groups using core hour as usage in ch_group.txt, one group per line, first.
+suph_dl.csv and ch_group.txt should be placed in the IO directory [fldr] specified in task_api.cfg.  Configure the default SU per hour in task_api.cfg, the SU per hour for each slave in suph_dl.csv, and the groups using core hour as usage in ch_group.txt, one group per line, first.
 
 ---
 Routine Reporting:
