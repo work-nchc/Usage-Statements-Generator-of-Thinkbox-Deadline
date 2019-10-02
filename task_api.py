@@ -125,7 +125,10 @@ while True:
     except EnvironmentError:
         pass
     
-    temp = sorted(next(walk(fldr + 'temp'))[2])
+    try:
+        temp = sorted(next(walk(fldr + 'temp'))[2])
+    except StopIteration:
+        pass
     for filename in temp:
         if '.csv' == filename[-4:]:
             dst = fldr + 'users/' + filename
