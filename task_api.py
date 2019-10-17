@@ -2,7 +2,7 @@ from Deadline.Scripting import RepositoryUtils, JobUtils
 from datetime import datetime
 from os import mkdir, walk, remove, rename
 from io import open
-from time import time
+from time import time, ctime
 
 t = time()
 while True:
@@ -143,7 +143,7 @@ while True:
         except EnvironmentError:
             pass
 
-    print '\r\t\t\t\t\t\t' + str(round(time() - t, 3)) + '     ',
+    print '\r\t\t\t\t\t\t{} {}     '.format(round(time() - t, 3), ctime()),
 
 def __main__():
     return None
